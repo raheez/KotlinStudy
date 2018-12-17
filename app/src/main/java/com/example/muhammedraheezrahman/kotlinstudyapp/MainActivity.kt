@@ -26,7 +26,10 @@ class MainActivity : AppCompatActivity() {
             titleTv.text = "Yo baby"
 
              string = titleTv.text.toString()
+            val arr = arrayOf(1,2,3,4,5)
             title2Tv.text = string
+            for (item in arr)
+            titleTv.append(item.toString())
 
 
         }
