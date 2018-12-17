@@ -48,6 +48,23 @@ class MainActivity : AppCompatActivity() {
         var p = Person()
         titleTv.text = p.display("Lemons")
 
+        loginbtin.setOnClickListener {
+
+            var username : String
+            var password : String
+
+            username = usernameet.text.toString()
+            password = passwordet.text.toString()
+
+            if (!username.isEmpty() && !password.isEmpty() && username.equals("raheez") && password.equals("password")){
+
+                Toast.makeText(applicationContext,"Authentication Successfull ",Toast.LENGTH_SHORT).show()
+            }
+            else
+                Toast.makeText(applicationContext,"Authentication failed ",Toast.LENGTH_SHORT).show()
+
+
+        }
     }
     class Person{
 
@@ -62,5 +79,7 @@ class MainActivity : AppCompatActivity() {
 
         }
     }
+
+
 
 }

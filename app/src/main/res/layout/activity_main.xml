@@ -26,4 +26,29 @@
               android:id="@+id/title2Tv"
     />
 
+
+    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:id="@+id/usernameet"
+              android:hint="username"
+              android:layout_margin="20dp"
+              android:layout_below="@id/title2Tv"
+
+    />
+
+    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:id="@+id/passwordet"
+              android:layout_margin="20dp"
+              android:layout_below="@id/usernameet"
+    android:hint="password"
+    />
+
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_below="@id/passwordet"
+    android:layout_margin="20dp"
+            android:text="Login"
+            android:id="@+id/loginbtin"
+    />
+
+
+
 </RelativeLayout>
