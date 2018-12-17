@@ -32,6 +32,8 @@ class MainActivity : AppCompatActivity() {
             titleTv.append(item.toString())
 
 
+            var p = Person()
+            titleTv.text = p.display("Lemons")
         }
 
 
@@ -43,6 +45,22 @@ class MainActivity : AppCompatActivity() {
         var mans = "dsafds"
         mans = ""
 
+        var p = Person()
+        titleTv.text = p.display("Lemons")
+
+    }
+    class Person{
+
+        fun display(data : String) : String{
+
+            var m : String
+            m = "nice "
+            m = m +data
+
+            return m
+
+
+        }
     }
 
 }
