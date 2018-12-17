@@ -35,6 +35,14 @@ class MainActivity : AppCompatActivity() {
         }
 
 
+        // val is immutable
+        val man = "ho"
+
+        // var is mutable
+
+        var mans = "dsafds"
+        mans = ""
+
     }
 
 }
